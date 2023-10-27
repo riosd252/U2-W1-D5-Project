@@ -28,6 +28,13 @@ nav ul {
   align-items: baseline;
 }
 
+nav ul li,
+.aside-footer ul li,
+.tag,
+.bookmark {
+  cursor: pointer;
+}
+
 #nav-btn {
   border-style: none;
   color: white;
@@ -175,10 +182,18 @@ h1 {
   justify-content: space-between;
 }
 
+/*ARTICLE CARDS*/
+
 .article-card {
   display: flex;
-  width: 530px;
+  justify-content: space-between;
+  width: 580px;
   margin-bottom: 2.5rem;
+}
+
+.card-left-content {
+  width: 430px;
+  margin-right: 20px;
 }
 
 .main-content {
@@ -209,6 +224,52 @@ h1 {
 }
 
 .card-right-img img {
-  margin-left: 25px;
   width: 150px;
+}
+
+/*ASIDE*/
+
+aside {
+  width: 260px;
+}
+
+/*TAG SECTIONS*/
+
+.tags-section-header p {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  font-size: 0.7rem;
+  color: #838383;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.658);
+}
+
+.tag {
+  border: 1px solid rgba(206, 206, 206, 0.658);
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+/*FOOTER*/
+
+.aside-footer ul {
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 0.7rem;
+  color: #838383;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside-footer ul li {
+  margin-inline: 0.3rem;
+  margin-block: 0.3rem;
 }
