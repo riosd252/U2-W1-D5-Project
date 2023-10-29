@@ -1,7 +1,9 @@
-const body = document.querySelector("body");
 const navBar = document.querySelector(".nav-bar");
 const navBtn = document.querySelector(".nav-btn");
+const main = document.querySelector("main");
 
-window.addEventListener("scroll", (e) => {
-  console.log(body.scrollTop);
+document.addEventListener("scroll", (e) => {
+  console.log(e);
+  navBar.classList.add("scrolled-bar");
+  navBtn.classList.add("scrolled-btn");
 });
