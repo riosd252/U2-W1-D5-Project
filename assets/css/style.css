@@ -18,6 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  transition: all 0.6s;
 }
 
 .scrolled-bar {
@@ -49,6 +50,7 @@ nav ul li,
   padding: 10px 15px;
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.6s;
 }
 
 .scrolled-btn {

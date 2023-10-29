@@ -3,7 +3,13 @@ const navBtn = document.querySelector(".nav-btn");
 const main = document.querySelector("main");
 
 document.addEventListener("scroll", (e) => {
-  console.log(e);
-  navBar.classList.add("scrolled-bar");
-  navBtn.classList.add("scrolled-btn");
+  console.log(document.documentElement.scrollTop);
+
+  if (document.documentElement.scrollTop >= 240) {
+    navBar.classList.add("scrolled-bar");
+    navBtn.classList.add("scrolled-btn");
+  } else {
+    navBar.classList.remove("scrolled-bar");
+    navBtn.classList.remove("scrolled-btn");
+  }
 });
