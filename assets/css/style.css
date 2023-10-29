@@ -2,21 +2,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* HEADER SECTION */
-
 header {
-  background-color: #ffc017;
-  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /*NAVIGATION BAR*/
 
-#nav-bar {
+.nav-bar {
+  background-color: #ffc017;
   height: 60px;
-  margin-inline: 150px;
+  padding-inline: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.scrolled-bar {
+  background-color: white;
 }
 
 nav ul {
@@ -35,7 +40,7 @@ nav ul li,
   cursor: pointer;
 }
 
-#nav-btn {
+.nav-btn {
   border-style: none;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -46,19 +51,19 @@ nav ul li,
   cursor: pointer;
 }
 
-hr {
-  margin: 0;
-  border: 0;
-  border-top: 1px solid black;
+.scrolled-btn {
+  background-color: #1a8917;
 }
 
 /*HERO SECTION*/
 
 #hero-section {
   height: 300px;
-  margin-left: 150px;
+  padding-left: 150px;
   display: flex;
   justify-content: space-between;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
 }
 
 .hero-description {
@@ -91,8 +96,11 @@ h1 {
 /* TRENDING SECTION */
 
 #trending-section {
-  margin-inline: 150px;
+  padding-inline: 150px;
   padding-top: 35px;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.5px solid rgba(206, 206, 206, 0.365);
 }
 
 .trending-section-header {
@@ -167,13 +175,6 @@ h1 {
   color: #838383;
 }
 
-.middle-separator {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-  border: 0;
-  border-bottom: 0.5px solid rgba(206, 206, 206, 0.664);
-}
-
 /*LOWER MAIN SECTION*/
 
 #lower-main-section {
@@ -231,6 +232,10 @@ h1 {
 
 aside {
   width: 260px;
+  position: sticky;
+  top: 90px;
+  z-index: 1;
+  align-self: flex-start;
 }
 
 /*TAG SECTIONS*/
