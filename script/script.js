@@ -3,9 +3,7 @@ const navBtn = document.querySelector(".nav-btn");
 const main = document.querySelector("main");
 
 document.addEventListener("scroll", (e) => {
-  console.log(document.documentElement.scrollTop);
-
-  if (document.documentElement.scrollTop >= 240) {
+  if (document.documentElement.scrollTop >= 360) {
     navBar.classList.add("scrolled-bar");
     navBtn.classList.add("scrolled-btn");
   } else {

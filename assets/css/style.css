@@ -12,8 +12,8 @@ header {
 
 .nav-bar {
   background-color: #ffc017;
-  height: 60px;
-  padding-inline: 150px;
+  height: 4.7rem;
+  padding-inline: 22.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,12 +30,14 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   align-items: baseline;
 }
 
 nav ul li,
 .aside-footer ul li,
+.trending-card,
+.article-card,
 .tag,
 .bookmark {
   cursor: pointer;
@@ -45,7 +47,7 @@ nav ul li,
   border-style: none;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   background-color: black;
   padding: 10px 15px;
   border-radius: 20px;
@@ -60,8 +62,8 @@ nav ul li,
 /*HERO SECTION*/
 
 #hero-section {
-  height: 300px;
-  padding-left: 150px;
+  height: 28.5rem;
+  padding-left: 22.2rem;
   display: flex;
   justify-content: space-between;
   background-color: #ffc017;
@@ -70,27 +72,29 @@ nav ul li,
 
 .hero-description {
   align-self: center;
-  line-height: 7rem;
+  line-height: 10rem;
 }
 
 h1 {
   font-family: "Spectral", serif;
+  letter-spacing: -0.3rem;
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 6.8rem;
 }
 
 .hero-description p {
-  line-height: 1rem;
+  line-height: 1.4rem;
+  font-size: 1.5rem;
 }
 
 #hero-btn {
   border-style: none;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 500;
   background-color: black;
-  padding: 10px 40px;
+  padding: 10px 50px;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -98,7 +102,7 @@ h1 {
 /* TRENDING SECTION */
 
 #trending-section {
-  padding-inline: 150px;
+  padding-inline: 22.2rem;
   padding-top: 35px;
   padding-bottom: 2.5rem;
   margin-bottom: 3.5rem;
@@ -129,12 +133,11 @@ h1 {
 .trending-card {
   width: 30%;
   display: flex;
-  font-size: 0.8rem;
   align-items: baseline;
 }
 
 .card-number p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 700;
   color: #e7e7e6;
   margin-right: 1rem;
@@ -143,7 +146,7 @@ h1 {
 .card-author {
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -165,7 +168,7 @@ h1 {
 
 .card-article-title p {
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -173,14 +176,15 @@ h1 {
 .card-footer {
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #838383;
+  margin-top: 0.5rem;
 }
 
 /*LOWER MAIN SECTION*/
 
 #lower-main-section {
-  margin-inline: 150px;
+  margin-inline: 22.2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -190,13 +194,12 @@ h1 {
 .article-card {
   display: flex;
   justify-content: space-between;
-  width: 580px;
+  width: 680px;
   margin-bottom: 2.5rem;
 }
 
 .card-left-content {
-  width: 430px;
-  margin-right: 20px;
+  width: 450px;
 }
 
 .main-content {
@@ -204,12 +207,12 @@ h1 {
 }
 
 .main-content h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .main-content p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #838383;
   margin-top: 0.5rem;
 }
@@ -217,9 +220,9 @@ h1 {
 .related-tag {
   display: inline-block;
   background-color: #e7e7e6;
-  padding-block: 0.2rem;
-  padding-inline: 0.4rem;
-  border-radius: 10px;
+  padding-block: 0.4rem;
+  padding-inline: 0.5rem;
+  border-radius: 12px;
 }
 
 .bookmark {
@@ -227,15 +230,15 @@ h1 {
 }
 
 .card-right-img img {
-  width: 150px;
+  width: 200px;
 }
 
 /*ASIDE*/
 
 aside {
-  width: 260px;
+  width: 380px;
   position: sticky;
-  top: 90px;
+  top: 115px;
   z-index: 1;
   align-self: flex-start;
 }
@@ -243,7 +246,7 @@ aside {
 /*TAG SECTIONS*/
 
 .tags-section-header p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -253,16 +256,16 @@ aside {
   flex-wrap: wrap;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #838383;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(206, 206, 206, 0.658);
+  padding-bottom: 1.7rem;
+  border-bottom: 1px solid rgb(206 206 206 / 41%);
 }
 
 .tag {
-  border: 1px solid rgba(206, 206, 206, 0.658);
+  border: 1px solid rgb(206 206 206 / 41%);
   border-radius: 3px;
-  padding: 0.5rem;
+  padding: 0.8rem 1.1rem;
 }
 
 /*FOOTER*/
@@ -270,7 +273,7 @@ aside {
 .aside-footer ul {
   margin-top: 1rem;
   list-style: none;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #838383;
   display: flex;
   flex-wrap: wrap;
